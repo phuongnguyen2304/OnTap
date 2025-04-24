@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Form</title>
+</head>
+<body>
+<h2 style="text-align:center;">Client Information</h2>
+
+<form th:action="@{/submit-client}" th:object="${clientInfo}" method="post">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" th:field="*{fullName}" placeholder="Enter your full name"/>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" th:field="*{email}" placeholder="Enter your email"/>
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" th:field="*{phone}" placeholder="Enter your phone number"/>
+
+    <label for="city">City</label>
+    <input type="text" id="city" th:field="*{city}" placeholder="Enter your city"/>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

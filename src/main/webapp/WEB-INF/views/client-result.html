@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Client Info Result</title>
+</head>
+<body>
+<h2>Submitted Client Info</h2>
+<p>Full Name: <span th:text="${clientInfo.fullName}"></span></p>
+<p>Email: <span th:text="${clientInfo.email}"></span></p>
+<p>Phone: <span th:text="${clientInfo.phone}"></span></p>
+<p>City: <span th:text="${clientInfo.city}"></span></p>
+</body>
+</html>
